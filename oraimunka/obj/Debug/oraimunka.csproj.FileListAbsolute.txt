@@ -1,0 +1,7 @@
+C:\Users\trencsanszkyp\13B_BACKEND\oraimunka\oraimunka\bin\Debug\oraimunka.exe.config
+C:\Users\trencsanszkyp\13B_BACKEND\oraimunka\oraimunka\bin\Debug\oraimunka.exe
+C:\Users\trencsanszkyp\13B_BACKEND\oraimunka\oraimunka\bin\Debug\oraimunka.pdb
+C:\Users\trencsanszkyp\13B_BACKEND\oraimunka\oraimunka\obj\Debug\oraimunka.csproj.AssemblyReference.cache
+C:\Users\trencsanszkyp\13B_BACKEND\oraimunka\oraimunka\obj\Debug\oraimunka.csproj.CoreCompileInputs.cache
+C:\Users\trencsanszkyp\13B_BACKEND\oraimunka\oraimunka\obj\Debug\oraimunka.exe
+C:\Users\trencsanszkyp\13B_BACKEND\oraimunka\oraimunka\obj\Debug\oraimunka.pdb
