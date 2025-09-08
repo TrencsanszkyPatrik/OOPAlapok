@@ -11,16 +11,26 @@ namespace oraimunka
 
         public class Szemely
         {
-           public string nev = "Dani";
-           public int eletkor = 19;
+            private string Nev;
+            private int Eletkor;
+
+            public Szemely(string nev, int eletkor)
+            {
+                Nev = nev; Eletkor = eletkor;
+            }
+
+            public string Kiir()
+            {
+                return $"A személy neve: {Nev}\nÉletkora: {Eletkor}";
+
+            }
         } 
 
 
         static void Main(string[] args)
         {
-            Szemely person = new Szemely();
-            Console.WriteLine($"A személy neve: {person.nev}\nÉletkora: {person.eletkor}");
-
+            Szemely person = new Szemely("Dani", 67);
+            Console.WriteLine(person.Kiir());
         }
     }
 }
