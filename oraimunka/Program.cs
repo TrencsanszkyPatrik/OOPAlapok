@@ -8,7 +8,27 @@ namespace oraimunka
 {
     internal class Program
     {
+        public class BankSzamla
+        {
+            private int _egyenleg;
 
+            public int Egyenleg
+            {
+                get { return _egyenleg; }
+                set
+                {
+                    if (value > 0)
+                        _egyenleg = value;
+                    else
+                        Console.WriteLine("Egyenleg nem lehet nulla");
+                }
+            }
+            public void Betesz() { }
+            public void Kivesz() { }
+
+        }
+       
+        
         public class Szemely
         {
             private string _nev;
