@@ -30,6 +30,11 @@ namespace oraimunka
                 }
             }
 
+            public override string ToString()
+            {
+                return $"A személy neve: {Nev}, kora: {Eletkor}";
+            }
+
             /*
             public Szemely(string neve, int eletkora)
             {
@@ -51,7 +56,9 @@ namespace oraimunka
             Szemely person = new Szemely();
             person.Eletkor = 33;
             person.Nev = "Feri";
-            Console.WriteLine($"A személy neve: {person.Nev}, kora: {person.Eletkor}");
+            Console.WriteLine(person);
+            
+            //Console.WriteLine($"A személy neve: {person.Nev}, kora: {person.Eletkor}");
             
             //Szemely person = new Szemely("Dani", 67);
             //Console.WriteLine(person.Kiir());
