@@ -31,7 +31,7 @@ namespace oraimunka
         
         public class Szemely
         {
-            private string _nev;
+            protected string _nev;
             private int _eletkor;
 
             public string Nev
@@ -52,15 +52,12 @@ namespace oraimunka
 
             public override string ToString()
             {
-                return $"A személy neve: {Nev}, kora: {Eletkor}";
+                return $"A személy neve: {_nev}, kora: {_eletkor}";
             }
+
+            
 
             /*
-            public Szemely(string neve, int eletkora)
-            {
-                nev = neve; eletkor = eletkora;
-            }
-
             public string Kiir()
             {
                 return $"A személy neve: {Nev}\nÉletkora: {Eletkor}";
@@ -74,6 +71,12 @@ namespace oraimunka
         {
             private string _neptunkod;
 
+
+            public override string ToString()
+            {
+                _nev = "Pista";
+                return $"A hallgató neve: {_nev}";
+            }
         }
 
 
@@ -83,6 +86,9 @@ namespace oraimunka
             person.Eletkor = 33;
             person.Nev = "Feri";
             Console.WriteLine(person);
+
+            Hallgato student = new Hallgato();
+            Console.WriteLine(student);
             
             //Console.WriteLine($"A személy neve: {person.Nev}, kora: {person.Eletkor}");
             
