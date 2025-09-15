@@ -70,6 +70,12 @@ namespace oraimunka
             */
         }
 
+        public class Hallgato : Szemely
+        {
+            private string _neptunkod;
+
+        }
+
 
         static void Main(string[] args)
         {
