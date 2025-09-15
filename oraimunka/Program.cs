@@ -34,6 +34,8 @@ namespace oraimunka
             protected string _nev;
             private int _eletkor;
 
+            
+
             public string Nev
             {
                 get { return _nev; } //privat adattag kiolvasásához
@@ -90,6 +92,18 @@ namespace oraimunka
                 return $"A hallgató neve: {_nev}";
             }
         }
+        public class Dolgozo : Szemely
+        {
+            private int _ber;
+
+            public Dolgozo(){
+                
+            }
+            public override string ToString()
+            {
+                return $"a dolgozó neve: {base.Nev}";
+            }
+        }
 
 
         static void Main(string[] args)
@@ -118,6 +132,9 @@ namespace oraimunka
             {
                 Console.WriteLine(item.Nev);
             }
+
+            Dolgozo worker = new Dolgozo();
+
 
             //Console.WriteLine($"A személy neve: {person.Nev}, kora: {person.Eletkor}");
 
