@@ -71,6 +71,18 @@ namespace oraimunka
         {
             private string _neptunkod;
 
+            public string Neptunkod
+            {
+                get { return _neptunkod;}
+                set
+                {
+                    if(value.Length <= 6)
+                    {
+                        _neptunkod = value;
+                    } else
+                        Console.WriteLine("Túl hosszú kód");
+                } 
+            }
 
             public override string ToString()
             {
@@ -88,6 +100,7 @@ namespace oraimunka
             Console.WriteLine(person);
 
             Hallgato student = new Hallgato();
+            student.Neptunkod = "123456";
             Console.WriteLine(student);
             
             //Console.WriteLine($"A személy neve: {person.Nev}, kora: {person.Eletkor}");
