@@ -102,9 +102,25 @@ namespace oraimunka
             Hallgato student = new Hallgato();
             student.Neptunkod = "123456";
             Console.WriteLine(student);
-            
+
+            List<Hallgato> studentlist = new List<Hallgato>();
+            for (int i = 0; i < 3; i++)
+            {
+                Hallgato student2 = new Hallgato();
+                Console.Write($"Kérem a(z) {i+1} hallgató nevét: ");
+                student2.Nev = Console.ReadLine();
+                Console.Write($"Kérem a(z) {i + 1} hallgató életkorát: ");
+                student2.Eletkor = Convert.ToInt32(Console.ReadLine());
+                studentlist.Add(student2);
+            }
+
+            foreach (var item in studentlist)
+            {
+                Console.WriteLine(item.Nev);
+            }
+
             //Console.WriteLine($"A személy neve: {person.Nev}, kora: {person.Eletkor}");
-            
+
             //Szemely person = new Szemely("Dani", 67);
             //Console.WriteLine(person.Kiir());
         }
